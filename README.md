@@ -14,12 +14,12 @@ external tools, no database. The source file is never modified.
 
 ## Run it
 ```powershell
-.\run_pipeline.ps1 -InputPath "C:\sales\raw.csv"
+.\run_pipeline.ps1 -InputPath "PUT YOUR CSV PATH HERE"
 ```
 
 If the auto-detection guesses a column wrong, name them:
 ```powershell
-.\run_pipeline.ps1 -InputPath "C:\sales\raw.csv" `
+.\run_pipeline.ps1 -InputPath "PUT YOUR CSV PATH HERE" `
     -AmountColumn "Revenue" -ProductColumn "Item" -CustomerColumn "Client" -DateColumn "InvoiceDate" `
     -DateColumns "InvoiceDate" -NumberColumns "Revenue" -NameColumns "Client"
 ```
